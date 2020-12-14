@@ -1,6 +1,5 @@
 import { createConnection } from 'typeorm'
-import Users from './Users'
-import addCleaning from './cleaning'
+import Entities from './entities'
 
 let connection = createConnection({
 	type: 'postgres',
@@ -11,9 +10,7 @@ let connection = createConnection({
 	database: 'projekt_pracownia',
 	synchronize: true,
 	dropSchema: false,
-	entities: [
-		Users
-	],
+	entities: Entities
 })
 
 export default connection

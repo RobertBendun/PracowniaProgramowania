@@ -1,7 +1,7 @@
 import { Router } from 'express'
 import md5 from 'md5'
 import { getManager, getRepository } from 'typeorm'
-import Users from '../database/Users'
+import { Users } from '../database/entities'
 
 const router = Router()
 
